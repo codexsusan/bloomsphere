@@ -23,11 +23,9 @@ const getPostContent = (title: string) => {
 
 export const generateStaticParams = () => {
     const posts = getPostMetaData();
-
     return posts.map((post) => ({
-      title: post.title,
-  }));
-    // return [{ title: "aws-quickstart" }];
+        title: post.slug,
+    }));
 };
 
 function ArticlePage(props: ArticlePageProps) {
