@@ -25,8 +25,9 @@ export const generateStaticParams = () => {
     const posts = getPostMetaData();
 
     return posts.map((post) => ({
-        slug: post.slug,
-    }));
+      title: post.title,
+  }));
+    // return [{ title: "aws-quickstart" }];
 };
 
 function ArticlePage(props: ArticlePageProps) {
