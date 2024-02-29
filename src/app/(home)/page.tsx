@@ -13,8 +13,8 @@ function HomePage() {
                 </div>
             </div>
             <main className="flex justify-center mt-10">
-                <div className="max-w-full w-full grid grid-cols-7">
-                    <div className="col-start-3 col-span-3 flex flex-col gap-y-2">
+                <div className="max-w-full w-full p-4 grid grid-cols-1 md:grid-cols-10 lg:grid-cols-12">
+                    <div className="flex flex-col gap-y-2 md:col-start-2 md:col-span-8 lg:col-span-6 lg:col-start-4">
                         {postMetaData.map((article, index) => {
                             return <PostPreviewCard key={index} article={article} />;
                         })}

@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="font-bold text-3xl p-3 w-full text-center">
           <div className="flex justify-center items-baseline -space-x-1">
-            <span>B </span>
+            <span>Bloomsphere</span>
             <code className="text-blue-800 text-4xl">.</code>
           </div>
         </div>
